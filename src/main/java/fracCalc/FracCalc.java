@@ -118,7 +118,7 @@ public class FracCalc {
 		}
 		return answer;
 		*/
-		String answer = unitTest1(input);
+		String answer = unitTest2(input);
 		return answer;
 	}
 
