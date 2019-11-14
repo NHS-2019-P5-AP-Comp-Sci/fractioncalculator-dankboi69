@@ -61,7 +61,7 @@ public class FracCalc {
 
 	public static String produceAnswer(String input) {
 		// This one supports multiple operations
-		/*String answer = "";
+		String answer = "";
 		int count = 0;
 		for (int i = 0; i < input.length(); i++) {
 			char next = input.charAt(i);
@@ -116,9 +116,6 @@ public class FracCalc {
 			count--;
 			// Iteration management
 		}
-		return answer;
-		*/
-		String answer = unitTest2(input);
 		return answer;
 	}
 
