@@ -3,7 +3,8 @@
  */
 
 package fracCalc;
-//Checkpoint 1
+//Final version of FracCalc, by Alex Niu. Supports multiple operations and errors.
+
 import java.io.*;
 import java.util.*;
 
@@ -11,7 +12,7 @@ public class FracCalc {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Welcome to FracCalc V. 1.0 by Alex Niu. Type a calculation below");
+		System.out.println("Welcome to FracCalc V. 2.0 by Alex Niu. Type a calculation below");
 		String nextinput = "0";
 		// Sentinel loop- begins value of nextinput at "0" so it will run at least once
 		while (!(nextinput.equals("quit"))) {
@@ -71,6 +72,10 @@ public class FracCalc {
 		}
 		// Sees how many operations there are
 		count = count / 2;
+		if (count == 0) {
+			return input;
+		}
+		// If it is a basic fraction (no operands), it just returns the frac
 		boolean error = false;
 		String changingstring = input;
 		String cumulative = "";
